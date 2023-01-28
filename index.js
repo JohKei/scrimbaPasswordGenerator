@@ -5,3 +5,19 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+",
 "=","{","[","}","]",",","|",":",";","<",">",".","?","/"
 ];
+
+let characterCount=15
+function generatePassword(){
+    let passwordOne=""
+    let passwordTwo=""
+    let character= characters[Math.floor(Math.random()*characters.length)]
+    for (i=0; i<characterCount; i++){        
+        passwordOne += characters[Math.floor(Math.random()*characters.length)]
+    }
+    for (i=0; i<characterCount; i++){        
+        passwordTwo += characters[Math.floor(Math.random()*characters.length)]
+    }
+    document.getElementById("passwordOne").textContent=passwordOne
+    document.getElementById("passwordTwo").textContent=passwordTwo
+}
+
