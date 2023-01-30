@@ -11,12 +11,19 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+",
 let addNumbers =document.getElementById('add-numbers')
 let addSymbols =document.getElementById('add-symbols')
 
-let characterCount=15
+
+
 
 function generatePassword(){
     let passwordOne=""
     let passwordTwo=""
     let merged=characters
+    let characterCount=document.getElementById("number-input").value
+    if (characterCount<8){
+        characterCount=8
+    }else if (characterCount>20){
+        characterCount=20
+    }
     if (addNumbers.checked){
         merged = characters.concat(numbers)
     }  

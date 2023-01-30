@@ -85,6 +85,7 @@ body{
     height: auto;
     background-color: #273549;
     border-radius: 6px;
+    text-align: center;
 }
 .toggleContainer{
     display: flex;
