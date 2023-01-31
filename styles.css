@@ -162,3 +162,9 @@ body{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .copyContainer{
+    display: flex;
+    justify-content: space-around;
+  }
+ 

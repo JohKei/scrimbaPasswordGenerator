@@ -11,9 +11,6 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+",
 let addNumbers =document.getElementById('add-numbers')
 let addSymbols =document.getElementById('add-symbols')
 
-
-
-
 function generatePassword(){
     let passwordOne=""
     let passwordTwo=""
@@ -39,5 +36,14 @@ function generatePassword(){
     }
     document.getElementById("passwordOne").textContent=passwordOne
     document.getElementById("passwordTwo").textContent=passwordTwo
+    document.getElementById("passwordOne").value=passwordOne
+    document.getElementById("passwordTwo").value=passwordTwo
 }
-
+function copyFirst() {
+    var input = document.getElementById("passwordOne").value;
+    navigator.clipboard.writeText(input);
+}
+function copySecond() {
+    var input = document.getElementById("passwordTwo").value;
+    navigator.clipboard.writeText(input);
+}
