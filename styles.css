@@ -167,4 +167,6 @@ body{
     display: flex;
     justify-content: space-around;
   }
- 
+ .color{
+  color: moccasin;
+ }
